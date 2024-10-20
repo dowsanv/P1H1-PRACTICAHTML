@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - D&M SHOP</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer>
+        function toggleMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-green-700 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">DM SHOP</h1>
+            <!-- Icono del menu hamburguesa -->
+            <button class="block md:hidden" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <!-- Menú desktop -->
+            <nav class="hidden md:flex space-x-4">
+                <a href="index.html" class="hover:underline">Inicio</a>
+                <a href="productos.html" class="hover:underline">Productos</a>
+                <a href="nosotros.html" class="hover:underline">Nosotros</a>
+                <a href="contacto.html" class="hover:underline">Contacto</a>
+                <a href="blog.html" class="hover:underline">Blog</a>
+            </nav>
+        </div>
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <nav class="flex flex-col space-y-4 mt-4 text-center">
+                <a href="index.html" class="hover:underline">Inicio</a>
+                <a href="productos.html" class="hover:underline">Productos</a>
+                <a href="nosotros.html" class="hover:underline">Nosotros</a>
+                <a href="contacto.html" class="hover:underline">Contacto</a>
+                <a href="blog.html" class="hover:underline">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección del Blog -->
+    <section class="container mx-auto p-8">
+        <h2 class="text-3xl font-bold mb-6 text-center">Nuestro Blog</h2>
+
+        <!-- Artículos del Blog -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Entrada de Blog 1 -->
+            <article class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://www.comprarlotes.com/uploads/users/user4716/gallery/8832_ssss.jpg" alt="Imagen del blog" class="w-full h-40 object-cover rounded-t-lg">
+                <h3 class="text-xl font-bold mt-4">Juan Fernandez</h3>
+                <p class="text-gray-700 mt-2">Esta tienda es eficaz me permitio poder comprar mi celular de manera segura y fácil..</p>
+                <a href="#" class="text-green-700 hover:underline mt-4 block">Leer más</a>
+            </article>
+
+            <!-- Entrada de Blog 2 -->
+            <article class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://s10.s3c.es/imag/_v0/1300x709/9/3/6/2E18XHY.jpg" alt="Imagen del blog" class="w-full h-40 object-cover rounded-t-lg">
+                <h3 class="text-xl font-bold mt-4">Pedro Suárez</h3>
+                <p class="text-gray-700 mt-2">Me llamo la atención la puntualidad y eficacia en la que te ayudan, 100% seguro.</p>
+                <a href="#" class="text-green-700 hover:underline mt-4 block">Leer más</a>
+            </article>
+
+            <!-- Entrada de Blog 3 -->
+            <article class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://cdn.ipadizate.com/2024/09/iphone-16-caja.jpg" alt="Imagen del blog" class="w-full h-40 object-cover rounded-t-lg">
+                <h3 class="text-xl font-bold mt-4">Damaris Armijos</h3>
+                <p class="text-gray-700 mt-2">He buscado tantos sitios para poder adquirir mi dispositivo y me daba miedo hacerlo de manera online pero ahora ya no..</p>
+                <a href="#" class="text-green-700 hover:underline mt-4 block">Leer más</a>
+            </article>
+
+            <!-- Entrada de Blog 4 -->
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white p-4 text-center">
+        &copy; 2024 DM SHOP. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
